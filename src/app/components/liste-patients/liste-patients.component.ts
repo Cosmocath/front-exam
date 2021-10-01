@@ -8,19 +8,15 @@ import { PatientService } from 'src/app/shared/services/patient.service';
   styleUrls: ['./liste-patients.component.css']
 })
 export class ListePatientsComponent implements OnInit {
-
   patients: Patient[] = [];
 
   constructor(private patientService : PatientService) { }
 
   ngOnInit(): void {
-    this.patientService.getAll().subscribe(response => {
-      this.patients= response;
+    this.patientService.getAll().subscribe((patients: Patient[]) => {
+      this.patients = patients;
     })
 
-    this.patientService.getTest().subscribe(response => {
-      response;
-    })
   }
 
 }

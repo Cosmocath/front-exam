@@ -12,14 +12,9 @@ export class PatientService {
   constructor(private httpClient: HttpClient) { }
 
   getAll(): Observable<Patient[]> {
-    return this.httpClient.get<Patient[]>(`http://localhost:8080/patients`);
+    return this.httpClient.get<Patient[]>(`${environment.back_url}/patients`);
     }
 
-  getTest(): Observable<any> {
-    return this.httpClient.get(`http://localhost:8080/patients/test`);
 
   }
     
-
-
-}
