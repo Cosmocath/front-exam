@@ -5,18 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListePatientsComponent } from './components/liste-patients/liste-patients.component';
 import { ListeInfirmieresComponent } from './components/liste-infirmieres/liste-infirmieres.component';
-import { OnePatientComponent } from './components/one-patient/one-patient.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     ListePatientsComponent,
-    ListeInfirmieresComponent,
-    OnePatientComponent
+    ListeInfirmieresComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
