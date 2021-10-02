@@ -15,6 +15,10 @@ export class PatientService {
     return this.httpClient.get<Patient[]>(`${environment.back_url}/patients`);
     }
 
+  getOne(): Observable<Patient> {
+    return this.httpClient.get<Patient>(`${environment.back_url}/patients/?id`);
+  }
+
 
   }
     
