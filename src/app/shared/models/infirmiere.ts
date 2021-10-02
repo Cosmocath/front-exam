@@ -7,6 +7,4 @@ export interface Infirmiere {
     tel_perso: string;
     tel_pro: string;
 
-    
-
 }

@@ -7,6 +7,8 @@ import { ListePatientsComponent } from './components/liste-patients/liste-patien
 import { ListeInfirmieresComponent } from './components/liste-infirmieres/liste-infirmieres.component';
 import {HttpClientModule} from '@angular/common/http';
 import { OnePatientComponent } from './components/one-patient/one-patient.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { OneInfirmiereComponent } from './components/one-infirmiere/one-infirmiere.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { OnePatientComponent } from './components/one-patient/one-patient.compon
     ListePatientsComponent,
     ListeInfirmieresComponent,
     OnePatientComponent,
+    NavbarComponent,
+    OneInfirmiereComponent,
     
   ],
   imports: [
