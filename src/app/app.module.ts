@@ -11,7 +11,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { OneInfirmiereComponent } from './components/one-infirmiere/one-infirmiere.component';
 import { DetailInfirmiereComponent } from './components/detail-infirmiere/detail-infirmiere.component';
 
+/**bootstrap icon */
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { alarm, alarmFill, alignBottom } from 'ngx-bootstrap-icons';
 
+// Select some icons (use an object, not an array)
+const icons = {
+  alarm,
+  alarmFill,
+  alignBottom
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +35,8 @@ import { DetailInfirmiereComponent } from './components/detail-infirmiere/detail
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxBootstrapIconsModule.pick(icons)
   ],
   providers: [],
   bootstrap: [AppComponent]
