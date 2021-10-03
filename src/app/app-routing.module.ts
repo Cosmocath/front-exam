@@ -7,7 +7,7 @@ import { ListeInfirmieresComponent } from './components/liste-infirmieres/liste-
 import { ListePatientsComponent } from './components/liste-patients/liste-patients.component';
 
 const routes: Routes = [
-{path:"", component: AppComponent},
+
 {path:'patients', component: ListePatientsComponent},
 {path: 'patient/:id/details', component:DetailPatientComponent, pathMatch: 'full'},
 

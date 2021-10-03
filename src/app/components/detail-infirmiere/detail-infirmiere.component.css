@@ -1,1 +1,10 @@
 h1 {text-align:center}
+
+table, th, td {
+    border: 1px solid blue;
+    padding: 10px;
+  }
+
+table{ margin: auto;
+    width: 50% !important}
+
