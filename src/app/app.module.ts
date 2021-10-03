@@ -9,6 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { OnePatientComponent } from './components/one-patient/one-patient.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { OneInfirmiereComponent } from './components/one-infirmiere/one-infirmiere.component';
+import { DetailInfirmiereComponent } from './components/detail-infirmiere/detail-infirmiere.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { OneInfirmiereComponent } from './components/one-infirmiere/one-infirmie
     OnePatientComponent,
     NavbarComponent,
     OneInfirmiereComponent,
+    DetailInfirmiereComponent,
     
   ],
   imports: [

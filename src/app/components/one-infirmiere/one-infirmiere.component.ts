@@ -1,4 +1,5 @@
 import { Component,Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Infirmiere } from 'src/app/shared/models/infirmiere';
 
 @Component({

@@ -1,6 +1,6 @@
 
 
-<li *ngIf="patient">Nom du patient :{{ patient.nom | titlecase }} Prenom :{{ patient.prenom}} id: {{patient.id}}<button routerLink="detail/{{patient.id}}"> Detail </button></li>
+<li *ngIf="patient">Nom du patient :{{ patient.nom | titlecase }} Prenom :{{ patient.prenom}} id: {{patient.id}}<button [routerLink]="['/patient', patient.id, 'details']"> Detail </button></li>
 
 
  
