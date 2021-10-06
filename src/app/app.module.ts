@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListePatientsComponent } from './components/liste-patients/liste-patients.component';
 import { ListeInfirmieresComponent } from './components/liste-infirmieres/liste-infirmieres.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { OnePatientComponent } from './components/one-patient/one-patient.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { OneInfirmiereComponent } from './components/one-infirmiere/one-infirmiere.component';
 import { DetailInfirmiereComponent } from './components/detail-infirmiere/detail-infirmiere.component';
-
+/**formulaires */
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /**bootstrap icon */
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { alarm, alarmFill, alignBottom,archive,pencil } from 'ngx-bootstrap-icons';
@@ -35,13 +36,16 @@ const icons = {
     OneInfirmiereComponent,
     DetailInfirmiereComponent,
     AddPatientComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxBootstrapIconsModule.pick(icons)
+    NgxBootstrapIconsModule.pick(icons),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

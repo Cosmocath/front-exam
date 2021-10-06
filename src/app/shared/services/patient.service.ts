@@ -17,9 +17,9 @@ export class PatientService {
 
   getOne(_id:number): Observable<Patient> {
     return this.httpClient.get<Patient>(`${environment.back_url}/patients/`+_id);
-    
   }
 
-
+  addOne(patient: Patient): Observable<Patient> {
+    return this.httpClient.post<Patient>(`${environment.back_url}/patients`, patient);
   }
-    
+}

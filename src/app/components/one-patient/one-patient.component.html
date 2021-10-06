@@ -1,8 +1,8 @@
 
 
-<li *ngIf="patient">Nom du patient :{{ patient.nom | titlecase }} Prenom :{{ patient.prenom}} id: {{patient.id}}<button [routerLink]="['/patient', patient.id, 'details']"> Detail </button></li>
+<li *ngIf="patient">Nom du patient :{{ patient.nom | titlecase }} Prenom :{{ patient.prenom}} id: {{patient.id}}</li><button [routerLink]="['/patient', patient.id, 'details']"> Detail </button>
 
-<button [routerLink]="['/patients', 'patients']"> Detail </button>
+
 
  
   
