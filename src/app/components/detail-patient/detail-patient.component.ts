@@ -2,6 +2,11 @@ import { Component,Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Patient } from 'src/app/shared/models/patient';
 import { PatientService } from 'src/app/shared/services/patient.service';
+import { Directive, HostListener } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router'
+
+
 
 
 
@@ -12,11 +17,17 @@ import { PatientService } from 'src/app/shared/services/patient.service';
 })
 export class DetailPatientComponent implements OnInit {
   
+  
   @Input() id!: number;
   @Input() patient!: Patient;
   
 
-  constructor(private route: ActivatedRoute, private patientService: PatientService) { }
+  constructor(private route: ActivatedRoute,private router: Router,private patientService: PatientService) {
+   
+   }
+
+  
+   
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params.id;

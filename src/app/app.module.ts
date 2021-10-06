@@ -13,13 +13,17 @@ import { DetailInfirmiereComponent } from './components/detail-infirmiere/detail
 
 /**bootstrap icon */
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
-import { alarm, alarmFill, alignBottom } from 'ngx-bootstrap-icons';
+import { alarm, alarmFill, alignBottom,archive,pencil } from 'ngx-bootstrap-icons';
+import { AddPatientComponent } from './components/add-patient/add-patient.component';
 
 // Select some icons (use an object, not an array)
 const icons = {
   alarm,
   alarmFill,
-  alignBottom
+  alignBottom,
+  archive,
+  pencil
+  
 };
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ const icons = {
     NavbarComponent,
     OneInfirmiereComponent,
     DetailInfirmiereComponent,
+    AddPatientComponent,
     
   ],
   imports: [
