@@ -1,2 +1,20 @@
 <h1><i-bs name="pencil"width="35"  height="35"></i-bs>Créer un Nouveau Patient 
     </h1>
+
+    <form [formGroup]="formulaire" (ngSubmit)="addOne()">
+
+       
+        <div class="form-item">
+            <label for="nom">nom</label><input type="text" id="nom" formControlName="nom" />
+        </div>
+        <div class="form-item">
+            <label for="prenom">prenom</label><input type="text" id="prenom" formControlName="prenom" />
+        </div>
+        <div class="form-item">
+            <label for="dateDeNaissance">date de Naissance</label><input type="date" id="dateDeNaissance" formControlName="dateDeNaissance" />
+        </div>
+        <div class="form-item">
+            <label for="numeroSecuriteSociale">No SS</label><input type="text" id="numeroSecuriteSociale" formControlName="numeroSecuriteSociale" />
+        </div>
+        <button mat-button type="submit"> Valider</button>
+        </form>
