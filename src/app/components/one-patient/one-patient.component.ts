@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Patient } from 'src/app/shared/models/patient';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-one-patient',
@@ -9,7 +10,9 @@ import { Patient } from 'src/app/shared/models/patient';
 export class OnePatientComponent implements OnInit {
   @Input() patient!: Patient;
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
